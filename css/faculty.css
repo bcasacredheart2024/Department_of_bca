@@ -1,0 +1,483 @@
+
+.faculty{
+  margin:20px;
+}
+#ourfaculty{
+    text-align: center;
+    margin-top: 20px;
+}
+#bcahead{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #021c20;
+    border-radius: 8px;
+    background-color: rgba(7, 172, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    max-width: 300px;
+    animation: fadeIn 1s ease-in-out;
+    width: 40%;
+    min-width: 250px;
+}
+
+.person-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.person-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.person-info {
+    font-size: 14px;
+    color: #777;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* @media(max-width:900px){
+    #bcahead{
+        display: block;
+    }
+} */
+
+/* Faculty */
+
+
+
+.faculty-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.faculty-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.faculty-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.faculty-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.faculty-info {
+    font-size: 14px;
+    color: #777;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Animation for H1 tag */
+.gradient-h1 {
+    /* background: linear-gradient(45deg, #0b87fb, #ff2f05); */
+    -webkit-background-clip: text;
+    color: rgba(0, 128, 255,0);
+    -webkit-text-stroke:2px  #1808f8;
+    font-size: 50px;
+    font-family: candara;
+    animation: gradientFade 3s infinite alternate;
+    
+}
+
+@keyframes gradientFade {
+    from {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Pop Window */
+
+.modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    
+
+        /* New popup box */
+        
+
+
+        .popup-container1,.popup-container2,.popup-container3,.popup-container4,.popup-container5,.popup-container6 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .popup1,.popup2,.popup3,.popup4,.popup5,.popup6 {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 50%;
+            margin: 40px auto;
+        }
+        
+        .popup1 h2,.popup2 h2,.popup3 h2,.popup4 h2,.popup5 h2,.popup6 h2 {
+            margin-top: 0;
+        }
+        
+        .popup1 button,.popup2 button,.popup3 button,.popup4 button,.popup5 button,.popup6 button {
+            background-color: #04AA6D;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .popup1 button:hover,.popup2 button:hover,.popup3 button:hover,.popup4 button:hover,.popup5 button:hover,.popup6 button:hover {
+            background-color: #45a049;
+        }
+        
+        /* Animation styles */
+        .popup-container1,.popup-container2 ,.popup-container3 ,.popup-container4 ,.popup-container5 ,.popup-container6  {
+            animation: fadeIn 0.5s;
+        }
+        
+        .popup1,.popup2,.popup3,.popup4,.popup5,.popup6 {
+            animation: slideIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+
+
+        /* PROFILE DESIGN */
+
+        .profile-container,.rjshetty,.divyaprof,.viyolaser,.sweedlerod,.suchiclass {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          
+          .profile-pic,.profile-pic2,.profile-pic3,.profile-pic4 ,.profile-pic5 ,.profile-pic6 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+          }
+          
+          .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          /* 2 */
+
+          .profile-pic2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+          }
+          /* 3 */
+          .profile-pic3 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          /* 4 */
+          .profile-pic4 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          /* 5 */
+          .profile-pic5 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          /* 6 */
+          .profile-pic6 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+
+          
+          .profile-info,.profile-info2,.profile-info3,.profile-info4,.profile-info5,.profile-info6 {
+            flex: 1;
+          }
+          
+          .name,.name2,.name3,.name4,.name5,.name6 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          
+          .designation,.designation2,.designation3,.designation4,.designation5,.designation6 {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 10px;
+          }
+          
+          .date-of-joining,.date-of-joining2,.date-of-joining3,.date-of-joining4,.date-of-joining5,.date-of-joining6 {
+            font-size: 16px;
+            color: #999;
+            margin-bottom: 20px;
+          }
+          
+          .qualifications,.qualifications2,.qualifications3,.qualifications4,.qualifications5,.qualifications6 {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          .qualifications li {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+
+          /* 2 */
+          .qualifications2 li {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          /* 3 */
+          .qualifications3 li {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          /* 4 */
+          .qualifications4 li {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          /* 5 */
+          .qualifications5 li {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          /* 6 */
+          .qualifications6 li {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+
+
+          .qualifications li:before {
+            content: "\2022";
+            font-size: 18px;
+            color: #666;
+            margin-right: 10px;
+          }
+/* 2 */
+          .qualifications2 li:before {
+            content: "\2022";
+            font-size: 18px;
+            color: #666;
+            margin-right: 10px;
+          }
+          /* 3 */
+          .qualifications3 li:before {
+            content: "\2022";
+            font-size: 18px;
+            color: #666;
+            margin-right: 10px;
+          }
+           /* 4 */
+           .qualifications4 li:before {
+            content: "\2022";
+            font-size: 18px;
+            color: #666;
+            margin-right: 10px;
+          }
+           /* 5 */
+           .qualifications5 li:before {
+            content: "\2022";
+            font-size: 18px;
+            color: #666;
+            margin-right: 10px;
+          }
+           /* 6 */
+           .qualifications6 li:before {
+            content: "\2022";
+            font-size: 18px;
+            color: #666;
+            margin-right: 10px;
+          }
+
+
+
+
+/* Button Animations */
+
+/* #open-popup1,#open-popup2,#open-popup3,#open-popup4,#open-popup5,#open-popup6 {
+  background-color:rgba(237, 145, 7, 0.3);
+  color: #e84b17;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid rgba(149, 149, 4,0.1);
+  width:125px;
+  height: 28px;
+  /* height: 30px; */
+  /* cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; Add transition effect
+} */
+
+#open-popup1:hover, #open-popup2:hover, #open-popup3:hover, #open-popup4:hover, #open-popup5:hover, #open-popup6:hover {
+  background-color: rgba(30, 173, 251, 0.9); /* Change background color on hover */
+  box-shadow: 10 10 20px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+  animation: glow 1s infinite; /* Add glow animation on hover */
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(10, 109, 239, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(233, 8, 158, 0.2);
+  }
+}
+
+
+#open-popup1:active,#open-popup2:active ,#open-popup3:active ,#open-popup4:active ,#open-popup5:active ,#open-popup6:active {
+  transform: translateY(2px); /* Add press effect on click */
+  box-shadow: 0 0 10px rgba(11, 42, 245, 0.1); /* Reduce box shadow on click */
+}
+
+
+
+@media(max-width:700px){
+    .profile-container,.rjshetty,.divyaprof,.viyolaser,.sweedlerod,.suchiclass {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .profile-pic,.profile-pic2,.profile-pic3,.profile-pic4,.profile-pic5,.profile-pic6 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+      }
+      .gradient-h1 {
+        font-size: 28px;
+      }
+  }
+
+  .button-89{
+    margin: 10px;
+  }
+
+  
