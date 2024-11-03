@@ -1,0 +1,123 @@
+/* Wrapper to center the slider in the middle */
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Slider container with background and border-radius */
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8); /* Light white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for attraction */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover; /* Crops the image within its container */
+}
+
+.slide-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Centered description */
+.description-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.slider-description {
+    font-size: 20px; /* Smaller font size for the description */
+    color: #03062a;
+    font-family: monotype corsiva;
+    background-color: rgba(255, 255, 255, 0.8); /* Light white background for description */
+    padding: 10px;
+    border-radius: 10px; /* Border radius to match the container */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+
+/* Responsive height adjustment */
+@media screen and (max-width: 800px) {
+    .slider-container {
+        height: 300px;
+    }
+
+    .slide-image {
+        max-height: 300px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .slider-container {
+        height: 320px;
+    }
+
+    .slide-image {
+        max-height: 300px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .slider-container {
+        height: 300px;
+    }
+
+    .slide-image {
+        max-height: 280px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .slider-container {
+        height: 270px;
+    }
+
+    .slide-image {
+        max-height: 250px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .slider-container {
+        height: 230px;
+    }
+
+    .slide-image {
+        max-height: 240px;
+    }
+}
+
+
+

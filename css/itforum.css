@@ -1,0 +1,353 @@
+#bcadep{
+    text-align: center;
+}
+#slogan{
+    text-align: center;
+}
+.alpic{
+  width: 90%;
+  border-radius: 8px;
+}
+.heading{
+    width: 100%;
+    background-color: rgb(135, 181, 86);
+}
+.it-h1 {
+    font-size: 3rem;
+}
+
+section {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.it-h4 {
+    font-size: 40px;
+    font-family: rockwell;
+    color:#031268;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-text-stroke: 0.3vh #372aee;
+    position: relative;
+    left: 20;
+}
+
+.it-h2 {
+  font-size: 40px;
+  font-family: book antiqua;
+  color:#fe670a;
+  margin-bottom: 20px;
+  text-align: center;
+  -webkit-text-stroke: 0.3vh #ee2ac3;
+  position: relative;
+  left: 20;
+}
+
+
+
+.it-p {
+    font-size: 1.2rem;
+}
+
+.achievement-card, .batch-card, .team-member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0; /* Hidden initially for fade-in effect */
+}
+
+.team-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Animation classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* it forum members */
+.h1tag {
+    
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: transparent;
+    /* text-align: center; */
+
+}
+.h1tag{
+  
+  -webkit-text-stroke: 3px darkmagenta;
+  position: relative;
+}
+
+.h1tag::before{
+  content: "MEET OUR IT FORUM TEAM";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  color: darkmagenta;
+  border-right: 8px solid darkmagenta;
+  transition: 1s ease-in-out;
+}
+
+.h1tag:hover:before{
+  width: 100%;
+  filter: drop-shadow(0 0 25px darkmagenta);
+}
+
+
+
+.members-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+  }
+
+  .member-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    animation: fadeIn 1.5s ease-in forwards;
+    transform: translateY(20px);
+  }
+
+  .member-card:hover {
+    transform: scale(1.05);
+  }
+
+  .member-photo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .member-info {
+    padding: 20px;
+  }
+
+  .member-info h2 {
+    color: #0073e6;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .member-info h3 {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .member-info p {
+    color: #777;
+    font-size: 16px;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Media query for desktop (screens wider than 768px) */
+  @media (min-width: 550px) {
+    .members-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* Media query for larger screens (optional for extra styling) */
+  @media (min-width: 1200px) {
+    .members-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .memberhead{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  /* OUR ALUMNI */
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.alumni-file {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alumni-file h2 {
+    margin-top: 0;
+}
+
+.alumni-file input[type="file"] {
+    margin-top: 20px;
+}
+.abt-h2{
+  color: aqua;
+  -webkit-text-stroke:  #2adaee;
+  
+}
+
+
+/* Typing Animation for p tag */
+
+.textp{
+  font-size: 24px;
+  /* letter-spacing: 10px; */
+  font-family: monospace;
+  /* border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden; */
+  /* animation:
+    typing 2s ,
+    cursor 4s step-end infinite alternate; */
+}
+/* @keyframes cursor{
+  50%{
+    border-color: transparent;
+  }
+}
+@keyframes typing{
+  from{
+    width:0;
+  }
+} */
+.sdm-img{
+  padding: 10px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sdm-img img{
+  border-radius: 10px;
+  width: 750px;
+}
+.par{
+  display: block;
+
+}
+@media (max-width: 800px) {
+  .sdm-img img{
+    width: 500px;
+}
+
+}
+@media (max-width: 600px) {
+  .sdm-img img{
+    width: 400px;
+}
+
+}
+@media (max-width: 425px) {
+  .sdm-img img{
+    border-radius: 10px;
+    width: 300px;
+}
+}
+@media (max-width: 795px) {
+  .h1tag{
+    font-size: 45px;
+  }
+}
+@media (max-width: 730px) {
+  .h1tag{
+    font-size: 40px;
+  }
+}
+@media (max-width: 660px) {
+  .h1tag{
+    font-size: 35px;
+  }
+}
+@media (max-width: 595px) {
+  .h1tag{
+    font-size: 30px;
+  }
+}
+#maam{
+  width: 100%;
+
+}
+.head-section{
+  display: flex;
+  justify-content: center;
+  
+}
+.maam{
+  display: flex;
+  justify-content: center;
+}
+.inaugration h1{
+  text-align: center;
+}
+
+.inaugration img{
+  width: 500px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.inaugration div{
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+}
