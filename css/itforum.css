@@ -45,7 +45,6 @@ section {
 }
 
 
-
 .it-p {
     font-size: 1.2rem;
 }
@@ -336,12 +335,12 @@ section {
   display: flex;
   justify-content: center;
 }
-.inaugration h1{
+.inaugration h2{
   text-align: center;
 }
 
 .inaugration img{
-  width: 500px;
+  width: 50%;
   padding-right: 10px;
   border-radius: 5px;
 }
