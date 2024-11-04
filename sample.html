@@ -1,66 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Attractive Preloader</title>
-  <style>
-    /* Preloader styles */
-    #preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #ffffff; /* Background color of the preloader */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      transition: opacity 0.5s ease, visibility 0.5s ease;
-    }
-    
-    #preloader.hidden {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    /* Spinner styles */
-    .spinner {
-      width: 50px;
-      height: 50px;
-      border: 5px solid #f3f3f3;
-      border-top: 5px solid #3498db;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Sidebar</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            overflow: hidden;
+        }
+        /* Sidebar container */
+        .sidebar-container {
+            position: fixed; /* Fix the container to the viewport */
+            height: 100vh; /* Full height */
+            right: 0; /* Position it to the right */
+        }
+        /* Sidebar styling */
+        .sidebar {
+            height: 100%;
+            width: 80px;
+            background-color: #343a40;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            transition: width 0.3s ease;
+        }
+        .sidebar:hover {
+            width: 220px; /* Expanded width */
+        }
+        /* Menu items */
+        .menu-item {
+            width: 100%;
+            padding: 10px 20px; /* Keep padding consistent */
+            color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s, padding-left 0.3s ease; /* Change to padding-left */
+        }
+        .sidebar:hover .menu-item {
+            padding-left: 40px; /* Only increase padding on left on hover */
+        }
+        .menu-item:hover {
+            background-color: #495057;
+        }
+        .menu-item i {
+            font-size: 1.5em;
+            margin-left: 10px; /* Adjust margin */
+            transition: transform 0.3s ease;
+        }
+        .sidebar:hover .menu-item i {
+            transform: scale(1.2);
+        }
+        .menu-item span {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 1.1em;
+            margin-left: 10px; /* Add margin for space between icon and text */
+        }
+        .sidebar:hover .menu-item span {
+            opacity: 1;
+        }
+        /* Social icons at the bottom */
+        .social-icons {
+            margin-top: auto;
+            padding-bottom: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons i {
+            color: #f8f9fa;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .social-icons i:hover {
+            transform: scale(1.2);
+            color: #ffc107;
+        }
+    </style>
+    <!-- Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-  <!-- Preloader div -->
-  <div id="preloader">
-    <div class="spinner"></div>
-  </div>
-
-  <div id="content">
-    <!-- Your main content goes here -->
-    <h1>Welcome to My Website!</h1>
-    <p>This is your main page content that will appear after the preloader.</p>
-  </div>
-
-  <script>
-    // JavaScript to hide preloader after the page loads
-    window.addEventListener("load", function () {
-      const preloader = document.getElementById("preloader");
-      preloader.classList.add("hidden");
-    });
-  </script>
+    <!-- Sidebar container -->
+    <div class="sidebar-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="menu-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-user-graduate"></i>
+                <span>Faculty</span>
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-book"></i>
+                <span>Academics</span>
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-laptop-code"></i>
+                <span>IT Inauguration</span>
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-comments"></i>
+                <span>IT Forum</span>
+            </div>
+            <div class="menu-item">
+                <i class="fas fa-envelope"></i>
+                <span>Contact Us</span>
+            </div>
+            <!-- Social icons -->
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

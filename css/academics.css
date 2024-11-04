@@ -1,0 +1,90 @@
+.a-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h1 {
+    color: #333;
+}
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.year-section {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    background-color: #e9e9ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+.year-section:hover {
+    background-color: #dfe7fd;
+}
+.year-section h2 {
+    color: #333;
+    margin: 0;
+    transition: opacity 0.3s ease;
+}
+.year-section:hover h2 {
+    opacity: 0; /* Hide the year name on hover */
+}
+/* Styling for the links on hover */
+.resource-links {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.year-section:hover .resource-links {
+    opacity: 1;
+}
+/* Layout for Sem 1, Sem 2, and PVQ */
+.top-row {
+    display: flex;
+    width: 100%;
+    height: 60%;
+}
+.top-row a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.top-row a:nth-child(1) {
+    background-color: #fff4cc; /* Soft Yellow for Semester 1 */
+}
+.top-row a:nth-child(2) {
+    background-color: #ffcdc1; /* Soft Coral for Semester 2 */
+}
+.pvq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    color: #fff;
+    background-color: #4db6ac; /* Teal for PVQ */
+    text-decoration: none;
+    font-size: 0.9em;
+}
