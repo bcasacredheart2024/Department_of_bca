@@ -39,9 +39,8 @@ h1 {
     transition: opacity 0.3s ease;
 }
 .year-section:hover h2 {
-    opacity: 0; /* Hide the year name on hover */
+    opacity: 0;
 }
-/* Styling for the links on hover */
 .resource-links {
     position: absolute;
     top: 0;
@@ -56,11 +55,10 @@ h1 {
 .year-section:hover .resource-links {
     opacity: 1;
 }
-/* Layout for Sem 1, Sem 2, and PVQ */
 .top-row {
     display: flex;
     width: 100%;
-    height: 60%;
+    height: 50%;
 }
 .top-row a {
     flex: 1;
@@ -72,19 +70,19 @@ h1 {
     font-size: 0.9em;
 }
 .top-row a:nth-child(1) {
-    background-color: #fff4cc; /* Soft Yellow for Semester 1 */
+    background-color: #fff4cc;
 }
 .top-row a:nth-child(2) {
-    background-color: #ffcdc1; /* Soft Coral for Semester 2 */
+    background-color: #ffcdc1;
 }
 .pvq {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 40%;
+    height: 50%;
     color: #fff;
-    background-color: #4db6ac; /* Teal for PVQ */
+    background-color: #4db6ac;
     text-decoration: none;
     font-size: 0.9em;
 }
