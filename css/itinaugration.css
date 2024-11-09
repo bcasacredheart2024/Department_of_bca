@@ -1,3 +1,15 @@
-.inaugration h1{
+.inaugration h1 {
     font-family: fantasy;
+    font-size: 30px;
+    text-align: center;
+}
+
+.paragraph {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.img-container {
+    margin-top: 20px;
 }

@@ -338,9 +338,12 @@ section {
 .inaugration{
   border: 2px solid grey;
   border-radius: 10px;
+  margin: 10px;
 }
 .inaugration h2{
   text-align: center;
+  margin-bottom: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .inaugration img{
@@ -364,4 +367,13 @@ section {
 .inaugration-p p{
   margin-left: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#viewmore{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #0073e6;
+  text-decoration: none;
+  margin-top: 10px;
+}
+#viewmore:hover{
+  text-decoration: underline;
 }
