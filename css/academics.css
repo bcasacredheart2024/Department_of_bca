@@ -124,10 +124,10 @@ table {
 
 th,
 td {
-    padding: 10px;
+    padding: 2px;
     border: 1px solid #333;
     width: 10%;
-    height: 4px;
+    height: 8px;
 
 
 }
@@ -193,4 +193,27 @@ caption {
 
 .grey {
     background-color: #dcdcdc;
+}
+@media (max-width:675px) {
+
+    table {
+    
+    font-size: 8px;
+}
+.header-row td {
+   
+    font-size: 9px;
+}
+.timetable {
+    width: 99%;
+}
+th,
+td {
+   padding: 2px;
+    width: 5%;
+    height: 5px;
+
+
+}
+
 }
