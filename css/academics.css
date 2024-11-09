@@ -93,6 +93,7 @@ h1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    max-height: 100%;
   }
   
   table {
@@ -100,7 +101,7 @@ h1 {
     border-collapse: collapse;
     text-align: center;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
   }
   
   th, td {
@@ -125,9 +126,12 @@ h1 {
   }
   
   tbody td {
-    height: 40px;
+    height: 3px;
   }
-  
+  caption{
+    font-size: 30px;
+
+  }
   /* Color-coded cells */
   .green { background-color: #a8e4a0; }
   .purple { background-color: #d8bfd8; }
