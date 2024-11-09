@@ -3,7 +3,7 @@ document.querySelectorAll('.delayed-link').forEach(link => {
         link.classList.add('disabled');
         setTimeout(() => {
             link.classList.remove('disabled');
-        }, 1000);
+        }, 200);
     });
 
     link.addEventListener('click', (event) => {
