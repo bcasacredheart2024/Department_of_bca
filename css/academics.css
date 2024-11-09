@@ -86,3 +86,58 @@ h1 {
     text-decoration: none;
     font-size: 0.9em;
 }
+
+/* Time table */
+/* Table and timetable container styling */
+.timetable {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #333;
+    width: 10%;
+
+  }
+ 
+  
+  thead th {
+    background-color: #ffcccb; /* Light red for header row */
+    font-weight: bold;
+  }
+  
+  .header-row td {
+    background-color: #ff6666;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  tbody td {
+    height: 40px;
+  }
+  
+  /* Color-coded cells */
+  .green { background-color: #a8e4a0; }
+  .purple { background-color: #d8bfd8; }
+  .red { background-color: #ff6666; }
+  .yellow { background-color: #ffff99; }
+  .dark-green { background-color: #006400; color: white; }
+  .blue { background-color: #87cefa; }
+  .light-blue { background-color: #b0e0e6; }
+  
+  /* Additional cell colors if needed */
+  .pink { background-color: #ffb6c1; }
+  .grey { background-color: #dcdcdc; }
+  

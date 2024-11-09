@@ -1,162 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academics - Resources</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        .resources {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .year-section {
-            position: relative;
-            width: 200px;
-            height: 120px;
-            background-color: #e9e9ef;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-            overflow: hidden;
-        }
-        .year-section:hover {
-            background-color: #dfe7fd;
-        }
-        .year-section h2 {
-            color: #333;
-            margin: 0;
-            transition: opacity 0.3s ease;
-        }
-        .year-section:hover h2 {
-            opacity: 0;
-        }
-        .resource-links {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        .year-section:hover .resource-links {
-            opacity: 1;
-        }
-        .top-row {
-            display: flex;
-            width: 100%;
-            height: 50%;
-        }
-        .top-row a {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #333;
-            text-decoration: none;
-            font-size: 0.9em;
-        }
-        .top-row a:nth-child(1) {
-            background-color: #fff4cc;
-        }
-        .top-row a:nth-child(2) {
-            background-color: #ffcdc1;
-        }
-        .pvq {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 50%;
-            color: #fff;
-            background-color: #4db6ac;
-            text-decoration: none;
-            font-size: 0.9em;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="sample.css">
 </head>
+
 <body>
+    <div class="timetable">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>0</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- monday -->
+                <tr class="header-row">
+                    <td colspan="8">MONDAY</td>
+                </tr>
 
-<div class="a-container">
-    <h1>Resources</h1>
-    <div class="resources">
-        <div class="year-section">
-            <h2>1st Year</h2>
-            <div class="resource-links">
-                <div class="top-row">
-                    <a href="link-to-materials-1" target="_blank" class="delayed-link">Semester 1</a>
-                    <a href="link-to-materials-2" target="_blank" class="delayed-link">Semester 2</a>
-                </div>
-                <a href="link-to-pvq-1" target="_blank" class="pvq delayed-link">PVQ</a>
-            </div>
-        </div>
+                <tr>
+                    <td>I BCA</td>
+                    <td></td>
+                    <td class="green">ENG(D)</td>
+                    <td class="purple">FOC(JRD)</td>
+                    <td class="red">MATHS(VS)</td>
+                    <td class="yellow" colspan="2">LAB(R/D)</td>
+                    <td></td>
+                </tr>
+                <tr>
 
-        <div class="year-section">
-            <h2>2nd Year</h2>
-            <div class="resource-links">
-                <div class="top-row">
-                    <a href="link-to-materials-3" target="_blank" class="delayed-link">Semester 3</a>
-                    <a href="link-to-materials-4" target="_blank" class="delayed-link">Semester 4</a>
-                </div>
-                <a href="link-to-pvq-2" target="_blank" class="pvq delayed-link">PVQ</a>
-            </div>
-        </div>
+                    <td>II BCA</td>
+                    <td></td>
+                    <td class="yellow">LAB(SW/DV)</td>
+                    <td class="green">ENG(D)</td>
+                    <td class="yellow">LANG(R/L)</td>
+                    <td class="dark-green">CCN(JRD)</td>
 
-        <div class="year-section">
-            <h2>3rd Year</h2>
-            <div class="resource-links">
-                <div class="top-row">
-                    <a href="link-to-materials-5" target="_blank" class="delayed-link">Semester 5</a>
-                    <a href="link-to-materials-6" target="_blank" class="delayed-link">Semester 6</a>
-                </div>
-                <a href="link-to-pvq-3" target="_blank" class="pvq delayed-link">PVQ</a>
-            </div>
-        </div>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>III BCA</td>
+                    <td></td>
+                    <td class="red">SC(VS)</td>
+                    <td class="blue">ES(S)</td>
+                    <td class="green">ADA(JRD)</td>
+                    <td class="dark-green">CC(SW)</td>
+                    <td class="light-blue">SE(VS)</td>
+                    <td></td>
+                </tr>
+                <!-- Tuesday -->
+                <tr class="header-row">
+                    <td colspan="8">MONDAY</td>
+                </tr>
+
+                <tr>
+                    <td>I BCA</td>
+                    <td></td>
+                    <td class="green">ENG(D)</td>
+                    <td class="purple">FOC(JRD)</td>
+                    <td class="red">MATHS(VS)</td>
+                    <td class="yellow" colspan="2">LAB(R/D)</td>
+                    <td></td>
+                </tr>
+                <tr>
+
+                    <td>II BCA</td>
+                    <td></td>
+                    <td class="yellow">LAB(SW/DV)</td>
+                    <td class="green">ENG(D)</td>
+                    <td class="yellow">LANG(R/L)</td>
+                    <td class="dark-green">CCN(JRD)</td>
+
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>III BCA</td>
+                    <td></td>
+                    <td class="red">SC(VS)</td>
+                    <td class="blue">ES(S)</td>
+                    <td class="green">ADA(JRD)</td>
+                    <td class="dark-green">CC(SW)</td>
+                    <td class="light-blue">SE(VS)</td>
+                    <td></td>
+                </tr>
+
+                <!-- Wednessday -->
+                <tr class="header-row">
+                    <td colspan="8">MONDAY</td>
+                </tr>
+
+                <tr>
+                    <td>I BCA</td>
+                    <td></td>
+                    <td class="green">ENG(D)</td>
+                    <td class="purple">FOC(JRD)</td>
+                    <td class="red">MATHS(VS)</td>
+                    <td class="yellow" colspan="2">LAB(R/D)</td>
+                    <td></td>
+                </tr>
+                <tr>
+
+                    <td>II BCA</td>
+                    <td></td>
+                    <td class="yellow">LAB(SW/DV)</td>
+                    <td class="green">ENG(D)</td>
+                    <td class="yellow">LANG(R/L)</td>
+                    <td class="dark-green">CCN(JRD)</td>
+
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>III BCA</td>
+                    <td></td>
+                    <td class="red">SC(VS)</td>
+                    <td class="blue">ES(S)</td>
+                    <td class="green">ADA(JRD)</td>
+                    <td class="dark-green">CC(SW)</td>
+                    <td class="light-blue">SE(VS)</td>
+                    <td></td>
+                </tr>
+
+                <!-- Thurseday -->
+                <tr class="header-row">
+                    <td colspan="8">MONDAY</td>
+                </tr>
+
+                <tr>
+                    <td>I BCA</td>
+                    <td></td>
+                    <td class="green">ENG(D)</td>
+                    <td class="purple">FOC(JRD)</td>
+                    <td class="red">MATHS(VS)</td>
+                    <td class="yellow" colspan="2">LAB(R/D)</td>
+                    <td></td>
+                </tr>
+                <tr>
+
+                    <td>II BCA</td>
+                    <td></td>
+                    <td class="yellow">LAB(SW/DV)</td>
+                    <td class="green">ENG(D)</td>
+                    <td class="yellow">LANG(R/L)</td>
+                    <td class="dark-green">CCN(JRD)</td>
+
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>III BCA</td>
+                    <td></td>
+                    <td class="red">SC(VS)</td>
+                    <td class="blue">ES(S)</td>
+                    <td class="green">ADA(JRD)</td>
+                    <td class="dark-green">CC(SW)</td>
+                    <td class="light-blue">SE(VS)</td>
+                    <td></td>
+                </tr>
+
+                <!-- Friday -->
+                <tr class="header-row">
+                    <td colspan="8">MONDAY</td>
+                </tr>
+
+                <tr>
+                    <td>I BCA</td>
+                    <td></td>
+                    <td class="green">ENG(D)</td>
+                    <td class="purple">FOC(JRD)</td>
+                    <td class="red">MATHS(VS)</td>
+                    <td class="yellow" colspan="2">LAB(R/D)</td>
+                    <td></td>
+                </tr>
+                <tr>
+
+                    <td>II BCA</td>
+                    <td></td>
+                    <td class="yellow">LAB(SW/DV)</td>
+                    <td class="green">ENG(D)</td>
+                    <td class="yellow">LANG(R/L)</td>
+                    <td class="dark-green">CCN(JRD)</td>
+
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>III BCA</td>
+                    <td></td>
+                    <td class="red">SC(VS)</td>
+                    <td class="blue">ES(S)</td>
+                    <td class="green">ADA(JRD)</td>
+                    <td class="dark-green">CC(SW)</td>
+                    <td class="light-blue">SE(VS)</td>
+                    <td></td>
+                </tr>
+                
+                <!-- Saturday -->
+                <tr class="header-row">
+                    <td colspan="8">MONDAY</td>
+                </tr>
+
+                <tr>
+                    <td>I BCA</td>
+                    <td></td>
+                    <td class="green">ENG(D)</td>
+                    <td class="purple">FOC(JRD)</td>
+                    <td class="red">MATHS(VS)</td>
+                    <td class="yellow" colspan="2">LAB(R/D)</td>
+                    <td></td>
+                </tr>
+                <tr>
+
+                    <td>II BCA</td>
+                    <td></td>
+                    <td class="yellow">LAB(SW/DV)</td>
+                    <td class="green">ENG(D)</td>
+                    <td class="yellow">LANG(R/L)</td>
+                    <td class="dark-green">CCN(JRD)</td>
+
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>III BCA</td>
+                    <td></td>
+                    <td class="red">SC(VS)</td>
+                    <td class="blue">ES(S)</td>
+                    <td class="green">ADA(JRD)</td>
+                    <td class="dark-green">CC(SW)</td>
+                    <td class="light-blue">SE(VS)</td>
+                    <td></td>
+                </tr>
+                <!-- Repeat similar structure for each day of the week -->
+            </tbody>
+        </table>
     </div>
-</div>
-
-<script>
-    document.querySelectorAll('.delayed-link').forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            link.classList.add('disabled');
-            setTimeout(() => {
-                link.classList.remove('disabled');
-            }, 1000);
-        });
-
-        link.addEventListener('click', (event) => {
-            if (link.classList.contains('disabled')) {
-                event.preventDefault();
-            }
-        });
-    });
-</script>
 
 </body>
+
 </html>
