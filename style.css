@@ -133,3 +133,10 @@ footer {
     font-size: 12px;
     border-top: 1px solid #444;
 }
+.current{
+    border: 2px solid rgba(255, 255, 254, 0.247);
+    box-shadow: inset(10px 13px 15px);
+    background-color: rgba(255, 255, 255, 0.207);
+    border-radius: 0px 0px 20px 20px;
+ 
+}

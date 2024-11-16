@@ -51,3 +51,18 @@
   .pink { background-color: #ffb6c1; }
   .grey { background-color: #dcdcdc; }
   
+
+  .main1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .div11{
+    position: absolute;
+    left: 500px;
+    
+
+  }
+  .timetable{
+    position: absolute;
+  }

@@ -339,6 +339,9 @@ section {
   border: 2px solid grey;
   border-radius: 10px;
   margin: 10px;
+  display: grid;
+  justify-self: center;
+
 }
 .inaugration h2{
   text-align: center;
