@@ -1,9 +1,10 @@
 <h1 align="center">🎓 BCA Department Website</h1>
 
 <p align="center">
-  <b>A collaborative project by <a href="https://github.com/Shashidharak89">Shashidhar</a> & <a href="https://github.com/Willscreation">Wilson</a></b>
+  <b>A collaborative project by <a href="https://github.com/Shashidharak89">Shashidhara K</a> & <a href="https://github.com/Willscreation">Wilson Rodrigous</a></b>
 </p>
-
+<br>
+<p><a href="https://bcasacredheart2024.github.io/Department_of_bca">Visit the website</a></p>
 ---
 
 <h2>📌 About the Project</h2>
